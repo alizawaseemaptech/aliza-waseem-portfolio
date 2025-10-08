@@ -5,124 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aliza Waseem | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
+  <header id="site-header">
     <div class="header-left">
       <h1>Aliza Waseem</h1>
       <p class="tagline">Software Developer | MERN Stack Enthusiast</p>
     </div>
 
-    <nav class="header-nav" id="nav-links">
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#cv">CV</a>
-  <a href="#contact">Contact</a>
-  <a href="https://github.com/AlizaWaseem" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/aliza-waseem-123456789/" target="_blank"><i class="fab fa-linkedin"></i></a>
-</nav>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
 
+    <nav class="header-nav" id="nav-links" aria-label="Main Navigation">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#cv">CV</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="https://github.com/AlizaWaseem" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a class="nav-link" href="https://www.linkedin.com/in/aliza-waseem-123456789/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    </nav>
 
-    <button id="theme-toggle" class="theme-btn">🌙</button>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="fade">
-    <h2>About Me</h2>
-    <p>
-      I’m <strong>Aliza Waseem</strong>, a Software Engineering student at Aptech Metro Star Gate and BS Computer Science student at Virtual University.  
-      Passionate about <strong>Frontend & Backend Development</strong> with hands-on experience in the MERN Stack.
-    </p>
-  </section>
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="fade section">
+      <h2>About Me</h2>
+      <p>
+        I’m <strong>Aliza Waseem</strong>, a Software Engineering student at Aptech Metro Star Gate and BS Computer Science student at Virtual University.
+        Passionate about <strong>Frontend & Backend Development</strong> with hands-on experience in the MERN Stack.
+      </p>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="fade">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React.js</span>
-      <span>Node.js</span>
-      <span>MongoDB</span>
-      <span>Express.js</span>
-      <span>Git & GitHub</span>
-    </div>
-  </section>
+    <!-- SKILLS -->
+    <section id="skills" class="fade section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React.js</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>Express.js</span>
+        <span>Git & GitHub</span>
+      </div>
+    </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="fade">
-    <h2>Education</h2>
-    <div class="card">
-      <h3>Aptech Metro Star Gate</h3>
-      <p>Software Engineering — 4th Semester</p>
-    </div>
-    <div class="card">
-      <h3>Virtual University</h3>
-      <p>BS Computer Science — 1st Semester</p>
-    </div>
-  </section>
+    <!-- EDUCATION -->
+    <section id="education" class="fade section">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Aptech Metro Star Gate</h3>
+        <p>Software Engineering — 4th Semester</p>
+      </div>
+      <div class="card">
+        <h3>Virtual University</h3>
+        <p>BS Computer Science — 1st Semester</p>
+      </div>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="fade">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>TCS — Service Ambassador (Remote)</h3>
-      <p>Developed communication, task management, and teamwork skills while managing remote tasks efficiently.</p>
-    </div>
-    <div class="card">
-      <h3>Task Manager Web App</h3>
-      <p>Created a complete MERN stack Task Manager Web Application with authentication and CRUD functionality.</p>
-      <a href="https://github.com/AlizaWaseem/task-manager" target="_blank" class="btn">View on GitHub</a>
-    </div>
-  </section>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="fade section">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>TCS — Service Ambassador (Remote)</h3>
+        <p>Developed communication, task management, and teamwork skills while managing remote tasks efficiently.</p>
+      </div>
+      <div class="card">
+        <h3>Task Manager Web App</h3>
+        <p>Created a complete MERN stack Task Manager Web Application with authentication and CRUD functionality.</p>
+        <a href="https://github.com/AlizaWaseem/task-manager" target="_blank" class="btn">View on GitHub</a>
+      </div>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="fade">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>MERN Task Manager</h3>
-      <p>Full-stack task manager app with authentication, CRUD, and responsive design.</p>
-      <a href="https://github.com/AlizaWaseem/task-manager" target="_blank" class="btn">View on GitHub</a>
-    </div>
-  </section>
+    <!-- PROJECTS -->
+    <section id="projects" class="fade section">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>MERN Task Manager</h3>
+        <p>Full-stack task manager app with authentication, CRUD, and responsive design.</p>
+        <a href="https://github.com/AlizaWaseem/task-manager" target="_blank" class="btn">View on GitHub</a>
+      </div>
+    </section>
 
-  <!-- CV -->
-  <section id="cv" class="fade highlight-cv">
-    <h2>Curriculum Vitae</h2>
-    <div class="cv-buttons">
-      <a href="aliza_waseem.pdf" target="_blank" class="btn">View CV</a>
-      <a href="aliza_waseem.pdf" download class="btn">Download CV</a>
-    </div>
-  </section>
+    <!-- CV -->
+    <section id="cv" class="fade section highlight-cv">
+      <h2>Curriculum Vitae</h2>
+      <div class="cv-buttons">
+        <a href="aliza_waseem.pdf" target="_blank" class="btn">View CV</a>
+        <a href="aliza_waseem.pdf" download class="btn">Download CV</a>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="fade">
-    <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> 03171087247</p>
-    <p><strong>Email:</strong> <a href="mailto:alizaf575@gmail.com">alizaf575@gmail.com</a></p>
+    <!-- CONTACT -->
+    <section id="contact" class="fade section">
+      <h2>Contact Me</h2>
+      <p><strong>Phone:</strong> 03171087247</p>
+      <p><strong>Email:</strong> <a href="mailto:alizaf575@gmail.com">alizaf575@gmail.com</a></p>
 
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p id="status"></p>
-  </section>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="status"></p>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
     <p>© 2025 Aliza Waseem | All Rights Reserved</p>
   </footer>
 
+  <!-- External libs -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
